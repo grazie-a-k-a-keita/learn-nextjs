@@ -14,3 +14,17 @@ pnpm install
 # server start
 pnpm dev
 ```
+
+### Deploy
+
+```bash
+openssl rand -base64 32
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+```
+
+Vercel の `Environment Variables` に以下の設定を加える
+
+```txt
+AUTH_SECRET: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+AUTH_URL: https://your-project-name.vercel.app/api/auth
+```
